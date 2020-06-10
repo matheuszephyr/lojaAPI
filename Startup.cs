@@ -36,13 +36,13 @@ namespace LojaAPI
             });
 
             
-            services.AddEntityFrameworkNpgsql().AddDbContext<MeuContexto>(opt =>
-                opt.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection")));
+            //services.AddEntityFrameworkNpgsql().AddDbContext<MeuContexto>(opt =>
+              //opt.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection")));
 
             services.AddEntityFrameworkNpgsql()
              .AddDbContext<ProdutoContexto>(options => options.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection")));
 
-            services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
+            //services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
 
             services.AddControllers();
 

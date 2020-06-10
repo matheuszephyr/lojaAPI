@@ -149,6 +149,6 @@ C:\Users\mathe\Documents\Visual Studio 2019\LojaAPI\obj\Debug\netcoreapp3.1\stat
 C:\Users\mathe\Documents\Visual Studio 2019\LojaAPI\obj\Debug\netcoreapp3.1\LojaAPI.dll
 C:\Users\mathe\Documents\Visual Studio 2019\LojaAPI\obj\Debug\netcoreapp3.1\LojaAPI.pdb
 C:\Users\mathe\Documents\Visual Studio 2019\LojaAPI\obj\Debug\netcoreapp3.1\LojaAPI.genruntimeconfig.cache
-C:\Users\mathe\Documents\Visual Studio 2019\LojaAPI\obj\Debug\netcoreapp3.1\LojaAPI.csprojAssemblyReference.cache
 C:\Users\mathe\Documents\Visual Studio 2019\LojaAPI\obj\Debug\netcoreapp3.1\LojaAPI.csproj.CoreCompileInputs.cache
 C:\Users\mathe\Documents\Visual Studio 2019\LojaAPI\obj\Debug\netcoreapp3.1\LojaAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mathe\Documents\Visual Studio 2019\LojaAPI\obj\Debug\netcoreapp3.1\LojaAPI.csprojAssemblyReference.cache

@@ -20,6 +20,8 @@ namespace LojaAPI.Controllers
     public class LojaController : ControllerBase
     {
 
+        //Por ser um aplicativo com métodos simples não foi criada uma classe contexto.
+
         private readonly ProdutoContexto _context;        
 
         public LojaController(ProdutoContexto context)
@@ -284,7 +286,7 @@ namespace LojaAPI.Controllers
         }
 
         //recebe um PEDIDOCOMPLETO e atualiza o pedido no banco, Retorna o ID para ser atribuido no novo usuario
-        [HttpPut("pedido")]
+        [HttpPut("pedido")] 
         public async Task<ActionResult<int>> AtualizaPedido(PedidoCompleto pedidoCompleto)
         {
             if (pedidoCompleto == null)

@@ -220,7 +220,19 @@ namespace LojaAPI.Controllers
         {
             try
             {
-                var seq = _context.Pedidos.AsNoTracking().ToList().OrderBy(x => x.IdTblPedido).LastOrDefault().IdTblPedido;
+                var exist = _context.Pedidos.AsNoTracking().ToList().FirstOrDefault();
+                int seq = 0;
+
+                if(exist != null)
+                {
+                    seq = _context.Pedidos.AsNoTracking().ToList().OrderBy(x => x.IdTblPedido).LastOrDefault().IdTblPedido;
+                }
+                else
+                {
+                    seq = 1;
+                }
+
+                
                 var seqPedido = seq + 1;
 
                 foreach(Produto prod in produtos){
@@ -294,7 +306,19 @@ namespace LojaAPI.Controllers
                 return BadRequest();
             }
 
-            int idUsu = _context.Usuarios.AsNoTracking().ToList().OrderBy(x => x.IdUsuario).LastOrDefault().IdUsuario + 1;
+            var exist = _context.Usuarios.AsNoTracking().ToList().FirstOrDefault();
+            int idUsu = 0;
+
+            if(exist != null)
+            {
+                idUsu = _context.Usuarios.AsNoTracking().ToList().OrderBy(x => x.IdUsuario).LastOrDefault().IdUsuario + 1;
+            }
+            else
+            {
+                idUsu = 1;
+            }
+
+            
 
             try
             {

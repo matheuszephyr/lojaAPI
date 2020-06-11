@@ -26,7 +26,7 @@ CREATE TABLE PRODUTO(
 
 INSERT INTO PRODUTO VALUES
 (1,'Blusa','assets/blusa.png',20.99),
-(2,'Calça','assets/calca.png',109.99),
+(2,'Calça','assets/calca.jpg',109.99),
 (3,'Tênis','assets/tenis.png',299.90),
 (4,'Chinelo','assets/chinelo.png',15.00),
 (5,'Chapéu','assets/chapeu.png',65.00),
